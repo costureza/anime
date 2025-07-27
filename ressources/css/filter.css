@@ -1,0 +1,103 @@
+.filter form{
+    background-color: var(--black);
+    border-radius: .5rem;
+    padding: 1.5rem;
+}
+
+.filter form .list-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.filter form .list-container .list{
+    flex: 1 1 25rem;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    display: flex;
+    background-color: var(--light-black);
+    position: relative;
+}
+.filter form .list-container .list:hover{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.filter form .list-container .list span{
+    color: var(--light-white);
+    font-size: 1.8rem;
+}
+
+.filter form .list-container .list .output{
+    color: var(--main-color);
+    padding: 0 1rem;
+    font-size: 2rem;
+    background: none;
+    width: 100%;
+}
+.filter form .list-container .list .items{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    background-color: var(--light-black);
+    padding: .5rem 1rem;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.filter form .list-container .list .items:hover,
+.filter form .list-container .list:hover .items,
+.filter form .list-container .list .output:focus + .items
+.filter form .list-container .list .output:focus-within + .items
+{
+    transform: scaleY(1);
+}
+
+.filter form .list-container .list .items .item{
+    cursor: pointer;
+    background-color: var(--black);
+    padding: .5rem 1rem;
+    font-size: 1.8rem;
+    margin: .5rem 0;
+    color: var(--light-white);
+    border-radius: .5rem;
+}
+.filter form .list-container .list .items .item:hover{
+    padding-left: 2rem;
+    color: var(--main-color);
+}
+.filter form .genere{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.filter form .genere input{
+    display: none;
+}
+.filter form .genere label{
+    font-size: 1.8rem;
+    color: var(--light-white);
+    background-color: var(--light-black);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+
+}
+.filter form .genere label:hover{
+    background-color: var(--white);
+    color: var(--light-black);
+}
+.filter form .genere input:checked + label,
+.filter form .genere label:hover{
+    background-color: var(--main-color);
+    color: var(--black);
+}
+.filter form .btn{
+    margin-top: 2rem;
+    margin-bottom: 0;
+}

@@ -1,0 +1,66 @@
+.comments-container .login{
+    padding: 1rem 1.5rem;
+    background-color: var(--light-black);
+    border-radius: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.comments-container .login .btn{
+    margin-top: 0;
+}
+.comments-container .login p{
+    font-size: 1.8rem;
+    color: var(--light-white);
+}
+.comments-container .box-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.comments-container .box-container .box{
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--light-black);
+}
+.comments-container .box-container .box .flex{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.comments-container .box-container .box .flex img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.comments-container .box-container .box .flex p{
+    font-size: 1.8rem;
+    color: var(--white);
+}
+.comments-container .box-container .box .flex span{
+    color: var(--light-white);
+    font-size: 1.5rem;
+}
+.comments-container .box-container .box .text{
+    font-size: 1.8rem;
+    color: var(--light-white);
+    background-color: var(--black);
+    margin-top: 2rem;
+    position: relative;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.comments-container .box-container .box .text::before{
+    content: '';
+    position: absolute;
+    top: -.8rem;
+    left: 2.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color:var(--black);
+    transform: rotateZ(45deg);
+}

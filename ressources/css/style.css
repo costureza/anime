@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url(./header.css);
+@import url(./media.css);
+@import url(./side_bar.css);
+@import url(./footer.css);
+@import url(./hero.css);
+@import url(./trending.css);
+@import url(./latest.css);
+@import url(./filter.css);
+@import url(./anime_details.css);
+@import url(./watch.css);
+@import url(./comments.css);
+@import url(./login.css);
+
+:root{
+    --main-color: #ffdd95;
+    --black:#222;
+    --light-black:#1a1a1a;
+    --bg-color:#0d0d0d;
+    --white:#fff;
+    --light-white:#aaa;
+    --box-shadow: 0 .5rem  1.5rem rgba(0,0,0,.2);
+    --text-shadow:.4rem .54rem 0 rgba(0,0,0,.2);
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    transition:.2s all  linear;
+    font-family: "Onest", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+::-webkit-scrollbar{
+    width: .8rem;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background: none;
+}
+body{
+    background: var(--bg-color);
+}
+section{
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .6rem 1.6rem;
+    padding-left: 1rem;
+    border-radius: .5rem;
+    background: var(--main-color);
+    font-size: 1.8rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.btn:hover{
+    background: var(--white);
+}
+.btn i{
+    margin-right: .5rem;
+}
+
+.heading{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: .1rem solid rgba(255,255,255,.2);
+    color: var(--main-color);
+}

@@ -1,0 +1,120 @@
+.anime_details .row{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: var(--light-black);
+}
+
+.anime_details .row .image{
+    width: 20rem;
+}
+.anime_details .row .image img{
+    height: 30rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.anime_details .row .image .ratings{
+    background-color: var(--black);
+    padding: .8rem 1rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    text-align: center;
+}
+.anime_details .row .image .ratings p{
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: .5rem;
+}
+.anime_details .row .image .ratings p span{
+    color: var(--main-color);
+}
+.anime_details .row .image .ratings i{
+    font-size: 1.8rem;
+    color: yellow;
+}
+.anime_details .row .image .buttons .btn{
+    width: 100%;
+    text-align: center;
+}
+.anime_details .row .image .buttons .btn:last-child{
+    background: crimson;
+    color: var(--white);
+}
+.anime_details .row .image .buttons .btn:last-child:hover{
+    background: var(--white);
+    color: var(--black);
+}
+
+.anime_details .row  .content .title{
+    font-size: 3rem;
+    color: var(--white);
+}
+.anime_details .row .content .synopsis{
+    font-size: 1.6rem;
+    color: var(--light-white);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.anime_details .row .content .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.anime_details .row .content .flex p{
+    flex:1 1 30rem;
+    font-size: 1.8rem;
+    color: var(--light-white);
+}
+.anime_details .row .content .flex p span{
+    color: var(--white);
+}
+.anime_details .row .content .genere{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.anime_details .row .content .genere a{
+    font-size: 1.8rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: var(--main-color);
+    border: .1rem solid rgba(255,255,255,.1);
+}
+.anime_details .row .content .genere a:hover{
+    background: var(--main-color);
+    color:var(--black);
+}
+.anime_details .drops {
+    margin: 1rem 0;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background-color: var(--light-black);
+}
+.anime_details .drops p{
+    font-size: 2rem;
+    color: var(--white);
+}
+.anime_details .drops .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: .5rem;
+}
+.anime_details .drops .flex a{
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    background-color: var(--light-white);
+    color: var(--light-black);
+}
+.anime_details .drops .flex a:hover{
+    background-color: var(--main-color);
+}
+.anime_details .drops .flex a.active{
+    background-color: var(--white);
+}

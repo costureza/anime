@@ -1,0 +1,39 @@
+.account form{
+    max-width: 50rem;
+    margin: 0 auto;
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--light-black);
+}
+.account form h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.account form .input{
+    margin: .5rem 0;
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1.4rem;
+    color: var(--white);
+    font-size: 1.8rem;
+    background-color: var(--black);
+}
+.account form .btn{
+    width: 100%;
+}
+.account form p{
+    font-size: 1.8rem;
+    color: var(--light-white);
+    margin-top: 2rem;
+}
+.account form p a{
+    text-decoration: underline;
+    color: var(--main-color);
+}
+.account form p a:hover{
+    color: var(--white);
+}

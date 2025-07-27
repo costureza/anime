@@ -1,0 +1,61 @@
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+}
+@media (max-width:991px){
+    #search-toggler{
+        display: inline-block;
+    }
+    .header .flex .search-form{
+        position: absolute;
+        top: calc(100% - .1rem);
+        left: 0;
+        right: 0;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba (255,255,255,.2);
+        padding: 1.5rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .flex .search-form.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .flex .search-form .search-bar {
+        width: 100%;
+    }
+    .anime_details .row{
+        flex-flow: column;
+        align-items: center;
+    }
+    .footer .list{
+        text-align: center;
+    }
+    .footer .list .list-links{
+        justify-content: center;
+    }
+    .footer .row{
+        flex-flow: column;
+        text-align: center;
+    } 
+    .footer .row .extra-links a{
+        padding: 1rem;
+    }
+}
+@media (max-width:768px){
+
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .hero .slide::before{
+        background: rgba(0,0,0,.7);
+    }
+    .hero .slide .content h3{
+        font-size: 4rem;
+    }
+}
